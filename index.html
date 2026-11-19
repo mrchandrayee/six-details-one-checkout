@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070e1d">
+<title>Six Details. One Checkout.</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="shell">
+<header class="top"><span>✳ MOTION / UI INTERFACE</span><span>CHECKOUT · UX STUDY</span></header>
+<section class="intro"><div class="progress" id="progress"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div><p class="eyebrow" id="eyebrow">DETAIL 01 — EXPRESS PAY</p><h1 id="headline">Fastest path <em>first.</em></h1></section>
+<section class="layout">
+<div class="checkout">
+<div class="order"><div class="product-thumb">✦</div><div class="product-info"><b>Everyday essentials</b><small>Linen shirt + 2 more</small></div><strong>$84.00</strong></div>
+<button class="express" id="express"><span>▣</span> Express pay</button>
+<div class="or"><span></span>or pay with card<span></span></div>
+<div class="tabs" role="group" aria-label="Checkout account option"><button class="tab selected" id="guest">Guest checkout</button><button class="tab" id="signin">Sign in</button></div>
+<div class="password-note" id="passwordNote"><label for="accountPassword">Create a password</label><input id="accountPassword" type="password" placeholder="Optional — after payment"><small>0 passwords needed to pay</small></div>
+<form id="paymentForm" novalidate>
+<label class="field-label" for="email">Email</label><input class="field" id="email" type="email" placeholder="ada@mail.com" autocomplete="email">
+<label class="field-label" for="card">Card</label>
+<div class="card-wrap"><input class="field card-number" id="card" inputmode="numeric" autocomplete="cc-number" placeholder="4242 4242 4242 4242" maxlength="23"><span class="brand" id="brand">CARD</span></div>
+<div class="card-row"><input class="field" id="expiry" inputmode="numeric" autocomplete="cc-exp" placeholder="MM / YY" maxlength="7"><input class="field" id="cvc" inputmode="numeric" autocomplete="cc-csc" placeholder="123" maxlength="4"></div>
+<div class="trust" id="trust"><span class="lock">♙</span><b>Encrypted. We never store your card.</b></div>
+<div class="shipping" id="shipping"><div class="ship-top"><b>Standard shipping</b><strong>Free</strong></div><div class="delivery"><span>♧</span><b id="deliveryDate">Arrives Tue, Oct 6</b></div></div>
+<div class="form-message" id="formMessage" aria-live="polite"></div>
+<button class="pay" id="pay" type="submit"><span>Pay $84.00</span><small id="buttonHint"></small></button>
+</form>
+</div>
+<aside class="explain"><div class="detail-count" id="detailCount">01 / 06</div><h2 id="detailTitle">Fastest path first.</h2><p id="detailCopy">People who can skip the form, do. The wallet already knows the email, card and expiry.</p><div class="rule" id="rule"><b>RULE</b> Put the fastest path at the top.</div><div class="step-controls"><button id="prev" disabled>← Previous</button><button id="next">Next detail →</button></div></aside>
+</section>
+<section class="summary"><p class="eyebrow">SCREEN TEARDOWN · CHECKOUT</p><h2>Six details. <em>One checkout.</em></h2>
+<div class="summary-list">
+<div><b>01</b><strong>Express pay</strong><span>the fastest path sits at the top</span><i>✓</i></div>
+<div><b>02</b><strong>Guest default</strong><span>the account comes after payment</span><i>✓</i></div>
+<div><b>03</b><strong>Live formatting</strong><span>card digits group as you type</span><i>✓</i></div>
+<div><b>04</b><strong>Trust in place</strong><span>the lock sits under the card field</span><i>✓</i></div>
+<div><b>05</b><strong>A real date</strong><span>a date people can plan around</span><i>✓</i></div>
+<div><b>06</b><strong>Total on button</strong><span>the last tap states the total</span><i>✓</i></div>
+</div>
+<div class="follow">@motion_ui_interface</div><p class="save">SAVE THIS FOR YOUR NEXT DESIGN REVIEW</p></section>
+<footer><span>HTML · CSS · JAVASCRIPT</span><span>INTERACTIVE CHECKOUT PROTOTYPE</span></footer>
+</main><script src="app.js"></script></body></html>
